@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body{
+            background-color: #6969ad;
+            color: #fff; /*Comentário em CSS */
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: rgba(255, 212, 22);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição!</p> <!--Comentário em html -->
+    <script>;
+       var n1 = Number(prompt('Digite um número: ')); // O window prompt retornará sempre uma string, mesmo que digite um número
+       var n2 = Number(prompt('Digite outro número: '));
+       //Precisa converter as strings que serão retornadas nos prompts para número
+       // para inteiro Number.parseInt();
+       // para real Number.parseFloat();
+       // para que o javascript decida se é inteiro ou real: Number()
+
+       var soma = n1 + n2;
+       //Converter numero para string
+       alert(`${n1} + ${n2} = ${soma}`); 
+       //`` = template string  
+       //${} = placeholder
+    </script>
+</body>
+</html>
