@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeiros passos com DOM</title>
+    <style>
+      body {
+        background: rgb(68, 125, 199);
+        color: white;
+        font: normal 18pt Arial;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <p>Aqui vai o resultado</p>
+    <p>
+      Dom é um acrônimo para Document Object Model: Conjunto de objetos dentro
+      do seu navegador que vai dar acesso aos documentos internos do seu website
+    </p>
+    <div id="msg">Aprendendo a selecionar por id</div>
+    <div id="slc">Aprendendo a selecionar por seletor</div>
+    <script>
+      var corpo = document.body;
+      corpo.style.background = "black"; //Irá alterar a cor de fundo da variável corpo
+
+      var p1 = document.getElementsByTagName("p")[0]; //Vai selecionar o elemento 'p' na posição 0
+      document.write(p1.innerText); //vai escrever na tela o texto do elemento selecionado
+      document.write(p1.innerHTML); //Vai escrever na tela o texto do elemento selecionado FORMATADO
+      p1.style.color = "blue"; //Irá alterar a cor do elemento p1 para azul
+
+      var d = document.getElementById("msg"); //Vai selecionar o elemento id="msg"
+      d.style.background = "green"; // Vai alterar a cor de fundo da div selecionada pelo id para verde
+      d.innerText = "Estou Aguardando..."; // Vai alterar o texto dentro da div
+
+      var d2= document.querySelector('div#slc')//Toda div é representada por # e toda classe é representada por .
+      d2.style.background = 'blue'//Vai alterar a cor de fundo da div selecionada pelo seletor para azul
+    </script>
+  </body>
+</html>
