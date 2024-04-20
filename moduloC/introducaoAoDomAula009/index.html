@@ -21,7 +21,7 @@
       do seu navegador que vai dar acesso aos documentos internos do seu website
     </p>
     <div id="msg">Aprendendo a selecionar por id</div>
-    <div id="slc">Aprendendo a selecionar por seletor</div>
+    <div class="slc">Aprendendo a selecionar por seletor</div>
     <script>
       var corpo = document.body;
       corpo.style.background = "black"; //Irá alterar a cor de fundo da variável corpo
@@ -35,7 +35,7 @@
       d.style.background = "green"; // Vai alterar a cor de fundo da div selecionada pelo id para verde
       d.innerText = "Estou Aguardando..."; // Vai alterar o texto dentro da div
 
-      var d2= document.querySelector('div#slc')//Toda div é representada por # e toda classe é representada por .
+      var d2= document.querySelector('div.slc')//Toda div é representada por # e toda classe é representada por .
       d2.style.background = 'blue'//Vai alterar a cor de fundo da div selecionada pelo seletor para azul
     </script>
   </body>

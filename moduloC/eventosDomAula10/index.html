@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos DOM</title>
+    <style>
+      * {
+        margin: 0;
+      }
+
+      body {
+        font: normal 10pt arial;
+      }
+
+      img {
+        height: 500px;
+      }
+
+      div {
+        background: rgb(42, 139, 42);
+        color: #fff;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      a.linkDom {
+        color: blue;
+
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Trabalhando com eventos no DOM</h1>
+    <p>Modelo de uma árvore <strong>DOM</strong>:</p>
+    <img src="arvoreDom.png" alt="Modelo de uma árvore DOM" />
+
+    <div id="area"">Interaja...</div>
+    <a
+      class="linkDom"
+      href="https://developer.mozilla.org/en-US/docs/Web/Events"
+      >Eventos de lista no DOM</a
+    >
+
+    <script>
+        let a = document.getElementById('area');
+        a.addEventListener('click', clicar); //evento para clicar
+        a.addEventListener('mouseenter', entrar);//evento para entrar 
+        a.addEventListener('mouseout', sair);//evento para sair
+
+      function clicar() {
+        a.innerText = 'Clicou';
+        a.style.background= 'red';
+      }
+
+      function entrar(){
+        a.innerText= 'Entrou';
+      }
+
+      function sair(){
+        a.innerText = 'Saiu';
+        a.style.background = 'green'
+      }
+    </script>
+  </body>
+</html>
