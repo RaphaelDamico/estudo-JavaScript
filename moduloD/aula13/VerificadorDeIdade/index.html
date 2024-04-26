@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>
+                Gênero:
+                <input type="radio" name="radgen" id="masc" checked />
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radgen" id="fem" />
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input id="btn" type="button" value="verificar" onclick="verificar()">
+            </p>
+            <hr />
+        </div>
+        <div id="res">
+            Preencha os dados acima
+        </div>
+        <script src="script.js"></script>
+    </section>
+    <footer>
+        <div id="link">
+            <a href="https://www.linkedin.com/in/raphaelvivarinidamico/" class="link" >LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>
